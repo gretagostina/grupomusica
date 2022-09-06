@@ -27,7 +27,8 @@ header {
     text-align: center;
 }
 #integrantes {
-
+    text-align: center;
+    margin-top:50px;
 }
 #favos {
     width: 60%;
@@ -167,6 +168,7 @@ td {
     display: flex;
 }
 footer{
+    margin-top: 150px;
     margin-left: 20px;
     list-style: none;
 }
