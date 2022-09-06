@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+nav ul {
+    display: flex;
+}
+nav ul li{
+    margin-left: 20px;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    width: 100%;
+    height: 300px;
+    background-image: url('imagenes/fondo-header.jpg');
+    background-position: center;
+}
+#biografia {
+ width: 60%;
+ margin: 0 auto;
+ text-align: center;
+}
+#discografia {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+#integrantes {
+
+}
+#favos {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+
+/*define font-family here*/
+
+
+
+
+.header-image {
+    width: 100%;
+}
+/* DISCOGRAFIA */
+table {
+    border: 1px solid black;
+    margin: 0 auto;
+}
+td {
+    padding: 10px;
+}
+/* INTEGRANTES */
+    body section.integrantes {
+        width: 100%;
+        height: 100vh;
+        background-color:#000;
+        
+        display:grid;
+        place-items:center;
+    }
+    img.foto-integrante {
+        width: 30%;
+        height: 100%;
+        object-fit:cover;
+        
+        -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+        
+        transform-origin:center;
+        transform:perspective(800px) rotateY(25deg);
+        transition:0.5s;
+    }
+    .container-integrantes {
+        max-width:600px;
+        max-height:350px; 
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:20px;
+        
+    }
+    .container-integrantes:hover img {
+        opacity:0.3;
+    }
+    .container-integrantes img:hover {
+        transform:perspective(800px)       rotateY(0deg);
+        opacity:1;
+    }
+/* CANCIONES FAVORITAS */
+.card {
+    --card-gradient: rgba(0, 0, 0, 0.8);
+    --card-gradient: #9fa9a3, #e3e0cc;
+    --card-blend-mode: overlay;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    padding-bottom: 1rem;
+    background-image: linear-gradient(var(--card-gradient), white max(9.5rem, 27vh));
+    overflow: hidden;
+  }
+  .card img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    max-height: max(10rem, 30vh);
+    aspect-ratio: 4/3;
+    mix-blend-mode: var(--card-blend-mode);
+  }
+  .card img ~ * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .card > :last-child {
+    margin-bottom: 0;
+  }
+  .card:hover, .card:focus-within {
+    --card-gradient: #c5d5c5 max(8.5rem, 20vh);
+  }
+  
+  /* Additional demo display styles */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    color: #444;
+    background-color:#32948F;
+  }
+  
+  .card h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .card a {
+    color: inherit;
+  }
+  
+  .card-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1.5rem;
+    max-width: 100vw;
+    width: 120ch;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  footer {
+    display: flex;
+}
+footer{
+    margin-left: 20px;
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
